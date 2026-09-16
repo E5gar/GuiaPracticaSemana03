@@ -36,7 +36,7 @@
   />
   <script src="https://cdn.tailwindcss.com"></script>
   <body class="bg-white text-slate-800">
-    <div id="paso2-nav" class="collapse paso-item">
+    <div id="paso2-nav" class="collapse paso-item !visible">
       <div class="bg-slate-900 text-slate-300 py-2 text-sm">
         <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
           <span class="d-flex align-items-center gap-2">
@@ -78,7 +78,7 @@
               <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="menuPrincipal">
+            <div class="collapse navbar-collapse !visible" id="menuPrincipal">
               <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-1">
                 <li class="nav-item">
                   <a
@@ -154,7 +154,7 @@
     </div>
 
     <main id="inicio">
-      <div id="paso3-hero" class="collapse paso-item">
+      <div id="paso3-hero" class="collapse paso-item !visible">
         <section class="bg-gradient-to-r from-slate-950 via-slate-900 to-red-900 text-white py-5">
           <div class="container py-lg-5">
             <div class="row align-items-center g-5">
@@ -206,7 +206,7 @@
           </div>
         </section>
       </div>
-      <div id="paso4-tarjetas" class="collapse paso-item">
+      <div id="paso4-tarjetas" class="collapse paso-item !visible">
         <section class="bg-slate-50 border-bottom border-slate-200 py-4">
           <div class="container">
             <div class="row text-center g-4">
@@ -538,7 +538,7 @@
           </div>
         </section>
       </div>
-      <div id="paso5-formulario" class="collapse paso-item">
+      <div id="paso5-formulario" class="collapse paso-item !visible">
         <section id="contacto" class="py-5">
           <div class="container py-lg-4">
             <div class="row g-5 align-items-start">
@@ -722,7 +722,10 @@
       </div>
     </main>
 
-    <footer id="paso1-footer" class="collapse paso-item bg-slate-950 text-slate-300 pt-5 pb-4">
+    <footer
+      id="paso1-footer"
+      class="collapse paso-item !visible bg-slate-950 text-slate-300 pt-5 pb-4"
+    >
       <div class="container">
         <div class="row g-4 pb-4 border-bottom border-white/10">
           <div class="col-lg-4">

@@ -36,828 +36,909 @@
   />
   <script src="https://cdn.tailwindcss.com"></script>
   <body class="bg-white text-slate-800">
-    <div class="bg-slate-900 text-slate-300 py-2 text-sm">
-      <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
-        <span class="d-flex align-items-center gap-2">
-          <i class="bi bi-truck text-red-500"></i>
-          Envío gratis a todo Perú en compras mayores a S/ 799
-        </span>
-        <span class="d-none d-md-flex align-items-center gap-3">
-          <a href="#soporte" class="text-slate-300 text-decoration-none hover:text-white"
-            >Soporte</a
-          >
-          <a href="#tiendas" class="text-slate-300 text-decoration-none hover:text-white"
-            >Tiendas</a
-          >
-          <a href="#cuenta" class="text-slate-300 text-decoration-none hover:text-white"
-            >Huawei ID</a
-          >
-        </span>
-      </div>
-    </div>
-    <header class="sticky-top">
-      <nav
-        class="navbar navbar-expand-lg navbar-light bg-white shadow-md border-b border-slate-200 py-3"
-      >
-        <div class="container">
-          <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
-            <img src="ABCD" alt="ABCD" width="40" height="40" class="rounded-md" />
-            <span class="fw-bold tracking-tight text-slate-900">HUAWEI</span>
-          </a>
-
-          <button
-            class="navbar-toggler border-0"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#menuPrincipal"
-            aria-controls="menuPrincipal"
-            aria-expanded="false"
-            aria-label="Abrir menú de navegación"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="menuPrincipal">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-1">
-              <li class="nav-item">
-                <a
-                  class="nav-link active px-3 rounded-lg hover:bg-slate-100"
-                  aria-current="page"
-                  href="#inicio"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle px-3 rounded-lg hover:bg-slate-100"
-                  href="#productos"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  >Productos</a
-                >
-                <ul class="dropdown-menu shadow-lg border-0 rounded-xl p-2">
-                  <li>
-                    <a class="dropdown-item rounded-lg py-2" href="#productos">Smartphones</a>
-                  </li>
-                  <li><a class="dropdown-item rounded-lg py-2" href="#productos">Tablets</a></li>
-                  <li><a class="dropdown-item rounded-lg py-2" href="#productos">Laptops</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item rounded-lg py-2" href="#productos">Wearables y audio</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-3 rounded-lg hover:bg-slate-100" href="#ecosistema"
-                  >Ecosistema</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-3 rounded-lg hover:bg-slate-100" href="#soporte">Soporte</a>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link px-3 rounded-lg hover:bg-slate-100 d-flex align-items-center gap-2"
-                  href="#contacto"
-                >
-                  Empresas
-                  <span class="badge rounded-pill bg-red-600 text-white">Nuevo</span>
-                </a>
-              </li>
-            </ul>
-
-            <div
-              class="d-flex flex-column flex-lg-row gap-2 align-items-stretch align-items-lg-center"
+    <div id="paso2-nav" class="collapse paso-item">
+      <div class="bg-slate-900 text-slate-300 py-2 text-sm">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+          <span class="d-flex align-items-center gap-2">
+            <i class="bi bi-truck text-red-500"></i>
+            Envío gratis a todo Perú en compras mayores a S/ 799
+          </span>
+          <span class="d-none d-md-flex align-items-center gap-3">
+            <a href="#soporte" class="text-slate-300 text-decoration-none hover:text-white"
+              >Soporte</a
             >
-              <label for="buscador" class="visually-hidden">Buscar productos</label>
-              <input
-                id="buscador"
-                type="search"
-                class="form-control rounded-lg border-slate-300 bg-slate-50"
-                placeholder="Buscar producto"
-                aria-label="Buscar productos Huawei"
-              />
-              <a
-                href="#contacto"
-                class="btn text-white bg-red-600 hover:bg-red-700 rounded-lg px-4 fw-semibold"
-                >Cotizar</a
-              >
-            </div>
-          </div>
+            <a href="#tiendas" class="text-slate-300 text-decoration-none hover:text-white"
+              >Tiendas</a
+            >
+            <a href="#cuenta" class="text-slate-300 text-decoration-none hover:text-white"
+              >Huawei ID</a
+            >
+          </span>
         </div>
-      </nav>
-    </header>
-    <main id="inicio">
-      <section class="bg-gradient-to-r from-slate-950 via-slate-900 to-red-900 text-white py-5">
-        <div class="container py-lg-5">
-          <div class="row align-items-center g-5">
-            <div class="col-lg-6">
-              <span
-                class="badge rounded-pill bg-white/10 text-red-300 border border-red-500/40 px-3 py-2 mb-3"
-                >Serie Mate 70 con HarmonyOS 5</span
-              >
-              <h1 class="display-3 fw-bold text-balance max-w-3xl mb-3">
-                Tecnología que facilita tu día a día
-              </h1>
-              <p class="lead text-slate-300 max-w-3xl mb-4">
-                Un solo ecosistema para tu teléfono, tablet y laptop. Comparte archivos, retoma
-                llamadas y continua el trabajo donde lo dejaste en cualquier lugar.
-              </p>
-              <div class="d-flex flex-column flex-sm-row gap-3 mb-5">
-                <a
-                  href="#productos"
-                  class="btn btn-lg text-white bg-red-600 hover:bg-red-700 rounded-lg px-4 fw-semibold shadow-lg"
-                  >Ver productos</a
-                >
-                <a
-                  href="#ecosistema"
-                  class="btn btn-lg btn-outline-light rounded-lg px-4 fw-semibold"
-                  >Conocer HarmonyOS</a
-                >
-              </div>
-              <div class="row g-4 border-top border-white/15 pt-4">
-                <div class="col-4">
-                  <p class="h3 fw-bold mb-1">100 W</p>
-                  <p class="text-slate-400 small mb-0">SuperCharge con cable</p>
-                </div>
-                <div class="col-4">
-                  <p class="h3 fw-bold mb-1">5 500 mAh</p>
-                  <p class="text-slate-400 small mb-0">Batería de larga duración</p>
-                </div>
-                <div class="col-4">
-                  <p class="h3 fw-bold mb-1">2 años</p>
-                  <p class="text-slate-400 small mb-0">Garantía</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/15">
-                <img src="ABCD" alt="ABCD" class="img-fluid w-100" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
+      <header class="sticky-top">
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-white shadow-md border-b border-slate-200 py-3"
+        >
+          <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+              <img src="ABCD" alt="ABCD" width="40" height="40" class="rounded-md" />
+              <span class="fw-bold tracking-tight text-slate-900">HUAWEI</span>
+            </a>
 
-      <section class="bg-slate-50 border-bottom border-slate-200 py-4">
-        <div class="container">
-          <div class="row text-center g-4">
-            <div class="col-6 col-md-3">
-              <i class="bi bi-shield-check text-red-600 fs-3"></i>
-              <p class="mb-0 fw-semibold mt-2">Garantía</p>
-              <p class="text-slate-500 small mb-0">Centros de atención a tu disposición</p>
-            </div>
-            <div class="col-6 col-md-3">
-              <i class="bi bi-credit-card-2-front text-red-600 fs-3"></i>
-              <p class="mb-0 fw-semibold mt-2">Paga en cuotas</p>
-              <p class="text-slate-500 small mb-0">Hasta en 12 cuotas sin intereses</p>
-            </div>
-            <div class="col-6 col-md-3">
-              <i class="bi bi-arrow-repeat text-red-600 fs-3"></i>
-              <p class="mb-0 fw-semibold mt-2">Cambia tu equipo</p>
-              <p class="text-slate-500 small mb-0">Paga menos por tu nuevo equipo</p>
-            </div>
-            <div class="col-6 col-md-3">
-              <i class="bi bi-headset text-red-600 fs-3"></i>
-              <p class="mb-0 fw-semibold mt-2">Estamos en Vivo</p>
-              <p class="text-slate-500 small mb-0">Todos los Lunes a sábado de 9 a 20 h</p>
-            </div>
-          </div>
-        </div>
-      </section>
+            <button
+              class="navbar-toggler border-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#menuPrincipal"
+              aria-controls="menuPrincipal"
+              aria-expanded="false"
+              aria-label="Abrir menú de navegación"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-      <section id="productos" class="py-5">
-        <div class="container py-lg-4">
-          <div class="row align-items-end mb-4 g-3">
-            <div class="col-lg-8">
-              <h2 class="display-6 fw-bold text-balance mb-2">Dispositivos</h2>
-              <p class="lead text-slate-600 max-w-3xl mb-0">
-                Precios referenciales. Cada equipo incluye garantía, soporte local y acceso a
-                AppGallery.
-              </p>
-            </div>
-            <div class="col-lg-4 text-lg-end">
-              <a href="#contacto" class="btn btn-outline-dark rounded-lg px-4"
-                >Descargar catálogo</a
-              >
-            </div>
-          </div>
-
-          <div class="row g-4">
-            <div class="col-md-4">
-              <article
-                class="card h-100 border-0 rounded-xl shadow-lg overflow-hidden transition duration-300 hover:scale-105 hover:shadow-2xl"
-              >
-                <img src="ABCD" alt="ABCD" class="card-img-top" />
-                <div class="card-body p-4">
-                  <span class="badge rounded-pill bg-red-600 mb-2">Lanzamiento</span>
-                  <h3 class="h5 fw-bold mb-2">HUAWEI Mate 70 Pro</h3>
-                  <p class="text-slate-600 small mb-3">
-                    Cámara Ultra Chroma de 50 MP, pantalla OLED de 6.9" y carga inalámbrica de 80 W.
-                  </p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <span class="h5 fw-bold text-slate-900 mb-0">S/ 5 499</span>
-                    <a
-                      href="#contacto"
-                      class="btn btn-sm text-white bg-red-600 hover:bg-red-700 rounded-lg px-3"
-                      >Comprar</a
-                    >
-                  </div>
-                </div>
-              </article>
-            </div>
-
-            <div class="col-md-4">
-              <article
-                class="card h-100 border-0 rounded-xl shadow-lg overflow-hidden transition duration-300 hover:scale-105 hover:shadow-2xl"
-              >
-                <img src="ABCD" alt="ABCD" class="card-img-top" />
-                <div class="card-body p-4">
-                  <span class="badge rounded-pill bg-slate-800 mb-2">Más vendido</span>
-                  <h3 class="h5 fw-bold mb-2">HUAWEI MatePad Pro 13.2</h3>
-                  <p class="text-slate-600 small mb-3">
-                    Pantalla Tandem OLED, lápiz M-Pencil incluido y teclado.
-                  </p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <span class="h5 fw-bold text-slate-900 mb-0">S/ 4 199</span>
-                    <a
-                      href="#contacto"
-                      class="btn btn-sm text-white bg-red-600 hover:bg-red-700 rounded-lg px-3"
-                      >Comprar</a
-                    >
-                  </div>
-                </div>
-              </article>
-            </div>
-
-            <div class="col-md-4">
-              <article
-                class="card h-100 border-0 rounded-xl shadow-lg overflow-hidden transition duration-300 hover:scale-105 hover:shadow-2xl"
-              >
-                <img src="ABCD" alt="ABCD" class="card-img-top" />
-                <div class="card-body p-4">
-                  <span class="badge rounded-pill bg-slate-800 mb-2">Trabajo</span>
-                  <h3 class="h5 fw-bold mb-2">HUAWEI MateBook X Pro</h3>
-                  <p class="text-slate-600 small mb-3">
-                    980 g, procesador Intel Core Ultra y pantalla táctil.
-                  </p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <span class="h5 fw-bold text-slate-900 mb-0">S/ 8 999</span>
-                    <a
-                      href="#contacto"
-                      class="btn btn-sm text-white bg-red-600 hover:bg-red-700 rounded-lg px-3"
-                      >Comprar</a
-                    >
-                  </div>
-                </div>
-              </article>
-            </div>
-
-            <div class="col-md-4">
-              <article
-                class="card h-100 border-0 rounded-xl shadow-lg overflow-hidden transition duration-300 hover:scale-105 hover:shadow-2xl"
-              >
-                <img src="ABCD" alt="ABCD" class="card-img-top" />
-                <div class="card-body p-4">
-                  <span class="badge rounded-pill bg-slate-800 mb-2">Salud</span>
-                  <h3 class="h5 fw-bold mb-2">HUAWEI WATCH GT 5 Pro</h3>
-                  <p class="text-slate-600 small mb-3">
-                    Monitoreo de ECG y hasta 14 días de autonomía.
-                  </p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <span class="h5 fw-bold text-slate-900 mb-0">S/ 1 799</span>
-                    <a
-                      href="#contacto"
-                      class="btn btn-sm text-white bg-red-600 hover:bg-red-700 rounded-lg px-3"
-                      >Comprar</a
-                    >
-                  </div>
-                </div>
-              </article>
-            </div>
-
-            <div class="col-md-4">
-              <article
-                class="card h-100 border-0 rounded-xl shadow-lg overflow-hidden transition duration-300 hover:scale-105 hover:shadow-2xl"
-              >
-                <img src="ABCD" alt="ABCD" class="card-img-top" />
-                <div class="card-body p-4">
-                  <span class="badge rounded-pill bg-slate-800 mb-2">Audio</span>
-                  <h3 class="h5 fw-bold mb-2">HUAWEI FreeBuds Pro 4</h3>
-                  <p class="text-slate-600 small mb-3">Cancelación de ruido y auido inmersivo.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <span class="h5 fw-bold text-slate-900 mb-0">S/ 899</span>
-                    <a
-                      href="#contacto"
-                      class="btn btn-sm text-white bg-red-600 hover:bg-red-700 rounded-lg px-3"
-                      >Comprar</a
-                    >
-                  </div>
-                </div>
-              </article>
-            </div>
-
-            <div class="col-md-4">
-              <article
-                class="card h-100 border-0 rounded-xl shadow-lg overflow-hidden transition duration-300 hover:scale-105 hover:shadow-2xl"
-              >
-                <img src="ABCD" alt="ABCD" class="card-img-top" />
-                <div class="card-body p-4">
-                  <span class="badge rounded-pill bg-slate-800 mb-2">Hogar</span>
-                  <h3 class="h5 fw-bold mb-2">HUAWEI MateView SE</h3>
-                  <p class="text-slate-600 small mb-3">
-                    Monitor de 23.8" con 100 Hz, modo de cuidado visual y base regulable.
-                  </p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <span class="h5 fw-bold text-slate-900 mb-0">S/ 1 099</span>
-                    <a
-                      href="#contacto"
-                      class="btn btn-sm text-white bg-red-600 hover:bg-red-700 rounded-lg px-3"
-                      >Comprar</a
-                    >
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="ecosistema" class="bg-slate-50 py-5 border-top border-slate-200">
-        <div class="container py-lg-4">
-          <div class="row g-5">
-            <div class="col-lg-8">
-              <h2 class="display-6 fw-bold text-balance mb-3">
-                Un ecosistema, todos tus dispositivos
-              </h2>
-              <p class="lead text-slate-600 mb-4 max-w-3xl">
-                Super Device reconoce los equipos cercanos con tu Huawei ID. Arrastra el ícono de tu
-                laptop hacia tu teléfono y ambos comparten pantalla, teclado y archivos.
-              </p>
-
-              <div class="rounded-xl overflow-hidden shadow-lg mb-4">
-                <img src="ABCD" alt="ABCD" class="img-fluid w-100" />
-              </div>
-
-              <div class="row g-4">
-                <div class="col-sm-6">
-                  <div class="bg-white rounded-xl p-4 h-100 border border-slate-200">
-                    <i class="bi bi-phone text-red-600 fs-4"></i>
-                    <h3 class="h6 fw-bold mt-3 mb-2">Multi-Screen Collaboration</h3>
-                    <p class="text-slate-600 small mb-0">
-                      Controla tu teléfono desde la pantalla de tu MateBook y responde mensajes con
-                      el teclado.
-                    </p>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="bg-white rounded-xl p-4 h-100 border border-slate-200">
-                    <i class="bi bi-share text-red-600 fs-4"></i>
-                    <h3 class="h6 fw-bold mt-3 mb-2">Huawei Share</h3>
-                    <p class="text-slate-600 small mb-0">
-                      Transfiere fotos y documentos acercando el equipo, sin depender de la red
-                      móvil.
-                    </p>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="bg-white rounded-xl p-4 h-100 border border-slate-200">
-                    <i class="bi bi-cloud-arrow-up text-red-600 fs-4"></i>
-                    <h3 class="h6 fw-bold mt-3 mb-2">Huawei Cloud</h3>
-                    <p class="text-slate-600 small mb-0">
-                      Respalda contactos, notas y galería con cifrado y restauración en un paso.
-                    </p>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="bg-white rounded-xl p-4 h-100 border border-slate-200">
-                    <i class="bi bi-grid-3x3-gap text-red-600 fs-4"></i>
-                    <h3 class="h6 fw-bold mt-3 mb-2">AppGallery</h3>
-                    <p class="text-slate-600 small mb-0">
-                      Descarga bancos, delivery y transporte locales con revisión de seguridad
-                      previa.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <aside class="col-lg-4" id="soporte">
-              <div class="sticky-lg-top" style="top: 6rem">
-                <div class="bg-white rounded-xl shadow-lg border border-slate-200 p-4 mb-4">
-                  <h2 class="h6 fw-bold text-slate-900 mb-3">Categorías</h2>
-                  <div class="list-group list-group-flush">
-                    <a
-                      href="#productos"
-                      class="list-group-item list-group-item-action d-flex justify-content-between align-items-center px-0 border-0 py-2"
-                    >
-                      Smartphones
-                      <span class="badge rounded-pill bg-slate-200 text-slate-700">18</span>
-                    </a>
-                    <a
-                      href="#productos"
-                      class="list-group-item list-group-item-action d-flex justify-content-between align-items-center px-0 border-0 py-2"
-                    >
-                      Tablets
-                      <span class="badge rounded-pill bg-slate-200 text-slate-700">9</span>
-                    </a>
-                    <a
-                      href="#productos"
-                      class="list-group-item list-group-item-action d-flex justify-content-between align-items-center px-0 border-0 py-2"
-                    >
-                      Laptops
-                      <span class="badge rounded-pill bg-slate-200 text-slate-700">7</span>
-                    </a>
-                    <a
-                      href="#productos"
-                      class="list-group-item list-group-item-action d-flex justify-content-between align-items-center px-0 border-0 py-2"
-                    >
-                      Wearables
-                      <span class="badge rounded-pill bg-slate-200 text-slate-700">12</span>
-                    </a>
-                    <a
-                      href="#productos"
-                      class="list-group-item list-group-item-action d-flex justify-content-between align-items-center px-0 border-0 py-2"
-                    >
-                      Audio
-                      <span class="badge rounded-pill bg-slate-200 text-slate-700">11</span>
-                    </a>
-                    <a
-                      href="#productos"
-                      class="list-group-item list-group-item-action d-flex justify-content-between align-items-center px-0 border-0 py-2"
-                    >
-                      Accesorios
-                      <span class="badge rounded-pill bg-slate-200 text-slate-700">24</span>
-                    </a>
-                  </div>
-                </div>
-
-                <div
-                  class="rounded-xl overflow-hidden shadow-lg bg-gradient-to-r from-red-700 to-slate-900 text-white p-4 mb-4"
-                >
-                  <img src="ABCD" alt="ABCD" class="img-fluid rounded-lg mb-3" />
-                  <h2 class="h6 fw-bold mb-2">Plan Renueva tu Huawei</h2>
-                  <p class="small text-slate-200 mb-3">
-                    Entrega tu equipo anterior y recibe hasta S/ 1 200 de descuento en tu próxima
-                    compra.
-                  </p>
-                  <a href="#contacto" class="btn btn-light btn-sm rounded-lg fw-semibold px-3"
-                    >Calcular mi descuento</a
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-1">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active px-3 rounded-lg hover:bg-slate-100"
+                    aria-current="page"
+                    href="#inicio"
+                    >Inicio</a
                   >
-                </div>
-
-                <div class="bg-white rounded-xl shadow-lg border border-slate-200 p-4">
-                  <h2 class="h6 fw-bold text-slate-900 mb-3">Atención al cliente</h2>
-                  <ul class="list-unstyled small text-slate-600 mb-0 d-grid gap-2">
-                    <li class="d-flex gap-2">
-                      <i class="bi bi-telephone text-red-600"></i> 0800 00 000
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle px-3 rounded-lg hover:bg-slate-100"
+                    href="#productos"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Productos</a
+                  >
+                  <ul class="dropdown-menu shadow-lg border-0 rounded-xl p-2">
+                    <li>
+                      <a class="dropdown-item rounded-lg py-2" href="#productos">Smartphones</a>
                     </li>
-                    <li class="d-flex gap-2">
-                      <i class="bi bi-whatsapp text-red-600"></i> +51 999 000 000
-                    </li>
-                    <li class="d-flex gap-2">
-                      <i class="bi bi-geo-alt text-red-600"></i> Av. Real 1234, Huancayo
-                    </li>
-                    <li class="d-flex gap-2">
-                      <i class="bi bi-clock text-red-600"></i> Lunes a sábado, 9:00 a 20:00
+                    <li><a class="dropdown-item rounded-lg py-2" href="#productos">Tablets</a></li>
+                    <li><a class="dropdown-item rounded-lg py-2" href="#productos">Laptops</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item rounded-lg py-2" href="#productos"
+                        >Wearables y audio</a
+                      >
                     </li>
                   </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-3 rounded-lg hover:bg-slate-100" href="#ecosistema"
+                    >Ecosistema</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-3 rounded-lg hover:bg-slate-100" href="#soporte">Soporte</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link px-3 rounded-lg hover:bg-slate-100 d-flex align-items-center gap-2"
+                    href="#contacto"
+                  >
+                    Empresas
+                    <span class="badge rounded-pill bg-red-600 text-white">Nuevo</span>
+                  </a>
+                </li>
+              </ul>
+
+              <div
+                class="d-flex flex-column flex-lg-row gap-2 align-items-stretch align-items-lg-center"
+              >
+                <label for="buscador" class="visually-hidden">Buscar productos</label>
+                <input
+                  id="buscador"
+                  type="search"
+                  class="form-control rounded-lg border-slate-300 bg-slate-50"
+                  placeholder="Buscar producto"
+                  aria-label="Buscar productos Huawei"
+                />
+                <a
+                  href="#contacto"
+                  class="btn text-white bg-red-600 hover:bg-red-700 rounded-lg px-4 fw-semibold"
+                  >Cotizar</a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
+
+    <main id="inicio">
+      <div id="paso3-hero" class="collapse paso-item">
+        <section class="bg-gradient-to-r from-slate-950 via-slate-900 to-red-900 text-white py-5">
+          <div class="container py-lg-5">
+            <div class="row align-items-center g-5">
+              <div class="col-lg-6">
+                <span
+                  class="badge rounded-pill bg-white/10 text-red-300 border border-red-500/40 px-3 py-2 mb-3"
+                  >Serie Mate 70 con HarmonyOS 5</span
+                >
+                <h1 class="display-3 fw-bold text-balance max-w-3xl mb-3">
+                  Tecnología que facilita tu día a día
+                </h1>
+                <p class="lead text-slate-300 max-w-3xl mb-4">
+                  Un solo ecosistema para tu teléfono, tablet y laptop. Comparte archivos, retoma
+                  llamadas y continua el trabajo donde lo dejaste en cualquier lugar.
+                </p>
+                <div class="d-flex flex-column flex-sm-row gap-3 mb-5">
+                  <a
+                    href="#productos"
+                    class="btn btn-lg text-white bg-red-600 hover:bg-red-700 rounded-lg px-4 fw-semibold shadow-lg"
+                    >Ver productos</a
+                  >
+                  <a
+                    href="#ecosistema"
+                    class="btn btn-lg btn-outline-light rounded-lg px-4 fw-semibold"
+                    >Conocer HarmonyOS</a
+                  >
+                </div>
+                <div class="row g-4 border-top border-white/15 pt-4">
+                  <div class="col-4">
+                    <p class="h3 fw-bold mb-1">100 W</p>
+                    <p class="text-slate-400 small mb-0">SuperCharge con cable</p>
+                  </div>
+                  <div class="col-4">
+                    <p class="h3 fw-bold mb-1">5 500 mAh</p>
+                    <p class="text-slate-400 small mb-0">Batería de larga duración</p>
+                  </div>
+                  <div class="col-4">
+                    <p class="h3 fw-bold mb-1">2 años</p>
+                    <p class="text-slate-400 small mb-0">Garantía</p>
+                  </div>
                 </div>
               </div>
-            </aside>
+              <div class="col-lg-6">
+                <div class="rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/15">
+                  <img src="ABCD" alt="ABCD" class="img-fluid w-100" />
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
+      <div id="paso4-tarjetas" class="collapse paso-item">
+        <section class="bg-slate-50 border-bottom border-slate-200 py-4">
+          <div class="container">
+            <div class="row text-center g-4">
+              <div class="col-6 col-md-3">
+                <i class="bi bi-shield-check text-red-600 fs-3"></i>
+                <p class="mb-0 fw-semibold mt-2">Garantía</p>
+                <p class="text-slate-500 small mb-0">Centros de atención a tu disposición</p>
+              </div>
+              <div class="col-6 col-md-3">
+                <i class="bi bi-credit-card-2-front text-red-600 fs-3"></i>
+                <p class="mb-0 fw-semibold mt-2">Paga en cuotas</p>
+                <p class="text-slate-500 small mb-0">Hasta en 12 cuotas sin intereses</p>
+              </div>
+              <div class="col-6 col-md-3">
+                <i class="bi bi-arrow-repeat text-red-600 fs-3"></i>
+                <p class="mb-0 fw-semibold mt-2">Cambia tu equipo</p>
+                <p class="text-slate-500 small mb-0">Paga menos por tu nuevo equipo</p>
+              </div>
+              <div class="col-6 col-md-3">
+                <i class="bi bi-headset text-red-600 fs-3"></i>
+                <p class="mb-0 fw-semibold mt-2">Estamos en Vivo</p>
+                <p class="text-slate-500 small mb-0">Todos los Lunes a sábado de 9 a 20 h</p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-      <section id="contacto" class="py-5">
-        <div class="container py-lg-4">
-          <div class="row g-5 align-items-start">
-            <div class="col-lg-5">
-              <h2 class="display-6 fw-bold text-balance mb-3">Solicita una cotización</h2>
-              <p class="lead text-slate-600 mb-4">
-                Un asesor revisa tu solicitud y responde en un plazo máximo de 24 horas.
-              </p>
-              <div class="rounded-xl overflow-hidden shadow-lg">
-                <img src="ABCD" alt="ABCD" class="img-fluid w-100" />
+        <section id="productos" class="py-5">
+          <div class="container py-lg-4">
+            <div class="row align-items-end mb-4 g-3">
+              <div class="col-lg-8">
+                <h2 class="display-6 fw-bold text-balance mb-2">Dispositivos</h2>
+                <p class="lead text-slate-600 max-w-3xl mb-0">
+                  Precios referenciales. Cada equipo incluye garantía, soporte local y acceso a
+                  AppGallery.
+                </p>
+              </div>
+              <div class="col-lg-4 text-lg-end">
+                <a href="#contacto" class="btn btn-outline-dark rounded-lg px-4"
+                  >Descargar catálogo</a
+                >
               </div>
             </div>
 
-            <div class="col-lg-7">
-              <div class="bg-white border border-slate-200 rounded-xl shadow-lg p-4 p-lg-5">
-                <form novalidate>
-                  <div class="row g-4">
-                    <div class="col-md-6">
-                      <label for="nombres" class="form-label fw-semibold"
-                        >Nombres y apellidos</label
+            <div class="row g-4">
+              <div class="col-md-4">
+                <article
+                  class="card h-100 border-0 rounded-xl shadow-lg overflow-hidden transition duration-300 hover:scale-105 hover:shadow-2xl"
+                >
+                  <img src="ABCD" alt="ABCD" class="card-img-top" />
+                  <div class="card-body p-4">
+                    <span class="badge rounded-pill bg-red-600 mb-2">Lanzamiento</span>
+                    <h3 class="h5 fw-bold mb-2">HUAWEI Mate 70 Pro</h3>
+                    <p class="text-slate-600 small mb-3">
+                      Cámara Ultra Chroma de 50 MP, pantalla OLED de 6.9" y carga inalámbrica de 80
+                      W.
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="h5 fw-bold text-slate-900 mb-0">S/ 5 499</span>
+                      <a
+                        href="#contacto"
+                        class="btn btn-sm text-white bg-red-600 hover:bg-red-700 rounded-lg px-3"
+                        >Comprar</a
                       >
-                      <input
-                        type="text"
-                        class="form-control rounded-lg py-2"
-                        id="nombres"
-                        name="nombres"
-                        placeholder="Ana Quispe Rojas"
-                        aria-describedby="ayudaNombres"
-                        required
-                      />
-                      <div id="ayudaNombres" class="form-text">
-                        Escríbelos como figuran en tu documento de identidad.
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <label for="correo" class="form-label fw-semibold">Correo electrónico</label>
-                      <input
-                        type="email"
-                        class="form-control rounded-lg py-2 is-invalid"
-                        id="correo"
-                        name="correo"
-                        value=""
-                        aria-describedby="errorCorreo"
-                        required
-                      />
-                      <div id="errorCorreo" class="invalid-feedback">
-                        El correo está incompleto. Incluye el dominio, por ejemplo ana@correo.com
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <label for="telefono" class="form-label fw-semibold">Teléfono</label>
-                      <div class="input-group">
-                        <span class="input-group-text rounded-start-lg bg-slate-100">+51</span>
-                        <input
-                          type="tel"
-                          class="form-control rounded-end-lg py-2"
-                          id="telefono"
-                          name="telefono"
-                          placeholder="999 000 000"
-                          aria-describedby="ayudaTelefono"
-                        />
-                      </div>
-                      <div id="ayudaTelefono" class="form-text">
-                        Lo usamos solo para coordinar la entrega.
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <label for="producto" class="form-label fw-semibold"
-                        >Producto de interés</label
-                      >
-                      <select
-                        class="form-select rounded-lg py-2"
-                        id="producto"
-                        name="producto"
-                        aria-describedby="ayudaProducto"
-                        required
-                      >
-                        <option value="" selected>Elige una opción</option>
-                        <option value="mate70">HUAWEI Mate 70 Pro</option>
-                        <option value="matepad">HUAWEI MatePad Pro 13.2</option>
-                        <option value="matebook">HUAWEI MateBook X Pro</option>
-                        <option value="watch">HUAWEI WATCH GT 5 Pro</option>
-                        <option value="freebuds">HUAWEI FreeBuds Pro 4</option>
-                      </select>
-                      <div id="ayudaProducto" class="form-text">
-                        Puedes cotizar más de un equipo en el mensaje.
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <label for="cantidad" class="form-label fw-semibold"
-                        >Cantidad de equipos</label
-                      >
-                      <input
-                        type="number"
-                        class="form-control rounded-lg py-2 peer"
-                        id="cantidad"
-                        name="cantidad"
-                        min="1"
-                        max="500"
-                        value="1"
-                        aria-describedby="ayudaCantidad"
-                      />
-                      <div id="ayudaCantidad" class="form-text peer-invalid:text-red-600">
-                        Desde 10 unidades aplica precio corporativo.
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <label for="ciudad" class="form-label fw-semibold">Ciudad de entrega</label>
-                      <input
-                        type="text"
-                        class="form-control rounded-lg py-2"
-                        id="ciudad"
-                        name="ciudad"
-                        placeholder="Huancayo"
-                        aria-describedby="ayudaCiudad"
-                      />
-                      <div id="ayudaCiudad" class="form-text">
-                        Cubrimos las 25 regiones del país.
-                      </div>
-                    </div>
-
-                    <div class="col-12">
-                      <label for="mensaje" class="form-label fw-semibold"
-                        >Detalle de tu solicitud</label
-                      >
-                      <textarea
-                        class="form-control rounded-lg py-2"
-                        id="mensaje"
-                        name="mensaje"
-                        rows="4"
-                        placeholder="Cuéntanos qué necesitas: modelos, colores, accesorios o fecha de entrega"
-                        aria-describedby="ayudaMensaje"
-                      ></textarea>
-                      <div id="ayudaMensaje" class="form-text">Máximo 500 caracteres.</div>
-                    </div>
-
-                    <div class="col-12">
-                      <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          id="terminos"
-                          name="terminos"
-                          aria-describedby="ayudaTerminos"
-                          required
-                        />
-                        <label class="form-check-label" for="terminos"
-                          >Autorizo el tratamiento de mis datos personales</label
-                        >
-                      </div>
-                    </div>
-
-                    <div class="col-12 d-flex flex-column flex-sm-row gap-3">
-                      <button
-                        type="submit"
-                        class="btn btn-lg text-white bg-red-600 hover:bg-red-700 rounded-lg px-4 fw-semibold"
-                      >
-                        Enviar solicitud
-                      </button>
-                      <button type="reset" class="btn btn-lg btn-outline-secondary rounded-lg px-4">
-                        Limpiar campos
-                      </button>
                     </div>
                   </div>
-                </form>
+                </article>
+              </div>
+
+              <div class="col-md-4">
+                <article
+                  class="card h-100 border-0 rounded-xl shadow-lg overflow-hidden transition duration-300 hover:scale-105 hover:shadow-2xl"
+                >
+                  <img src="ABCD" alt="ABCD" class="card-img-top" />
+                  <div class="card-body p-4">
+                    <span class="badge rounded-pill bg-slate-800 mb-2">Más vendido</span>
+                    <h3 class="h5 fw-bold mb-2">HUAWEI MatePad Pro 13.2</h3>
+                    <p class="text-slate-600 small mb-3">
+                      Pantalla Tandem OLED, lápiz M-Pencil incluido y teclado.
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="h5 fw-bold text-slate-900 mb-0">S/ 4 199</span>
+                      <a
+                        href="#contacto"
+                        class="btn btn-sm text-white bg-red-600 hover:bg-red-700 rounded-lg px-3"
+                        >Comprar</a
+                      >
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-md-4">
+                <article
+                  class="card h-100 border-0 rounded-xl shadow-lg overflow-hidden transition duration-300 hover:scale-105 hover:shadow-2xl"
+                >
+                  <img src="ABCD" alt="ABCD" class="card-img-top" />
+                  <div class="card-body p-4">
+                    <span class="badge rounded-pill bg-slate-800 mb-2">Trabajo</span>
+                    <h3 class="h5 fw-bold mb-2">HUAWEI MateBook X Pro</h3>
+                    <p class="text-slate-600 small mb-3">
+                      980 g, procesador Intel Core Ultra y pantalla táctil.
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="h5 fw-bold text-slate-900 mb-0">S/ 8 999</span>
+                      <a
+                        href="#contacto"
+                        class="btn btn-sm text-white bg-red-600 hover:bg-red-700 rounded-lg px-3"
+                        >Comprar</a
+                      >
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-md-4">
+                <article
+                  class="card h-100 border-0 rounded-xl shadow-lg overflow-hidden transition duration-300 hover:scale-105 hover:shadow-2xl"
+                >
+                  <img src="ABCD" alt="ABCD" class="card-img-top" />
+                  <div class="card-body p-4">
+                    <span class="badge rounded-pill bg-slate-800 mb-2">Salud</span>
+                    <h3 class="h5 fw-bold mb-2">HUAWEI WATCH GT 5 Pro</h3>
+                    <p class="text-slate-600 small mb-3">
+                      Monitoreo de ECG y hasta 14 días de autonomía.
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="h5 fw-bold text-slate-900 mb-0">S/ 1 799</span>
+                      <a
+                        href="#contacto"
+                        class="btn btn-sm text-white bg-red-600 hover:bg-red-700 rounded-lg px-3"
+                        >Comprar</a
+                      >
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-md-4">
+                <article
+                  class="card h-100 border-0 rounded-xl shadow-lg overflow-hidden transition duration-300 hover:scale-105 hover:shadow-2xl"
+                >
+                  <img src="ABCD" alt="ABCD" class="card-img-top" />
+                  <div class="card-body p-4">
+                    <span class="badge rounded-pill bg-slate-800 mb-2">Audio</span>
+                    <h3 class="h5 fw-bold mb-2">HUAWEI FreeBuds Pro 4</h3>
+                    <p class="text-slate-600 small mb-3">Cancelación de ruido y auido inmersivo.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="h5 fw-bold text-slate-900 mb-0">S/ 899</span>
+                      <a
+                        href="#contacto"
+                        class="btn btn-sm text-white bg-red-600 hover:bg-red-700 rounded-lg px-3"
+                        >Comprar</a
+                      >
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-md-4">
+                <article
+                  class="card h-100 border-0 rounded-xl shadow-lg overflow-hidden transition duration-300 hover:scale-105 hover:shadow-2xl"
+                >
+                  <img src="ABCD" alt="ABCD" class="card-img-top" />
+                  <div class="card-body p-4">
+                    <span class="badge rounded-pill bg-slate-800 mb-2">Hogar</span>
+                    <h3 class="h5 fw-bold mb-2">HUAWEI MateView SE</h3>
+                    <p class="text-slate-600 small mb-3">
+                      Monitor de 23.8" con 100 Hz, modo de cuidado visual y base regulable.
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="h5 fw-bold text-slate-900 mb-0">S/ 1 099</span>
+                      <a
+                        href="#contacto"
+                        class="btn btn-sm text-white bg-red-600 hover:bg-red-700 rounded-lg px-3"
+                        >Comprar</a
+                      >
+                    </div>
+                  </div>
+                </article>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
-  </body>
+        </section>
 
-  <footer id="tiendas" class="bg-slate-950 text-slate-300 pt-5 pb-4">
-    <div class="container">
-      <div class="row g-4 pb-4 border-bottom border-white/10">
-        <div class="col-lg-4">
-          <a
-            href="#inicio"
-            class="d-flex align-items-center gap-2 text-white text-decoration-none mb-3"
-          >
-            <img src="ABCD" alt="ABCD" width="36" height="36" class="rounded-md" />
-            <span class="fw-bold tracking-tight">HUAWEI</span>
-          </a>
-          <p class="small text-slate-400 max-w-3xl">
-            Distribuidor autorizado. Todos los equipos cuentan con garantía de fábrica y soporte en
-            centros de servicio.
-          </p>
-          <div class="d-flex gap-3 fs-5 mt-3">
-            <a href="#redes" class="text-slate-400 hover:text-white" aria-label="Facebook"
-              ><i class="bi bi-facebook"></i
-            ></a>
-            <a href="#redes" class="text-slate-400 hover:text-white" aria-label="Instagram"
-              ><i class="bi bi-instagram"></i
-            ></a>
-            <a href="#redes" class="text-slate-400 hover:text-white" aria-label="YouTube"
-              ><i class="bi bi-youtube"></i
-            ></a>
-            <a href="#redes" class="text-slate-400 hover:text-white" aria-label="LinkedIn"
-              ><i class="bi bi-linkedin"></i
-            ></a>
+        <section id="ecosistema" class="bg-slate-50 py-5 border-top border-slate-200">
+          <div class="container py-lg-4">
+            <div class="row g-5">
+              <div class="col-lg-8">
+                <h2 class="display-6 fw-bold text-balance mb-3">
+                  Un ecosistema, todos tus dispositivos
+                </h2>
+                <p class="lead text-slate-600 mb-4 max-w-3xl">
+                  Super Device reconoce los equipos cercanos con tu Huawei ID. Arrastra el ícono de
+                  tu laptop hacia tu teléfono y ambos comparten pantalla, teclado y archivos.
+                </p>
+
+                <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                  <img src="ABCD" alt="ABCD" class="img-fluid w-100" />
+                </div>
+
+                <div class="row g-4">
+                  <div class="col-sm-6">
+                    <div class="bg-white rounded-xl p-4 h-100 border border-slate-200">
+                      <i class="bi bi-phone text-red-600 fs-4"></i>
+                      <h3 class="h6 fw-bold mt-3 mb-2">Multi-Screen Collaboration</h3>
+                      <p class="text-slate-600 small mb-0">
+                        Controla tu teléfono desde la pantalla de tu MateBook y responde mensajes
+                        con el teclado.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="bg-white rounded-xl p-4 h-100 border border-slate-200">
+                      <i class="bi bi-share text-red-600 fs-4"></i>
+                      <h3 class="h6 fw-bold mt-3 mb-2">Huawei Share</h3>
+                      <p class="text-slate-600 small mb-0">
+                        Transfiere fotos y documentos acercando el equipo, sin depender de la red
+                        móvil.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="bg-white rounded-xl p-4 h-100 border border-slate-200">
+                      <i class="bi bi-cloud-arrow-up text-red-600 fs-4"></i>
+                      <h3 class="h6 fw-bold mt-3 mb-2">Huawei Cloud</h3>
+                      <p class="text-slate-600 small mb-0">
+                        Respalda contactos, notas y galería con cifrado y restauración en un paso.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="bg-white rounded-xl p-4 h-100 border border-slate-200">
+                      <i class="bi bi-grid-3x3-gap text-red-600 fs-4"></i>
+                      <h3 class="h6 fw-bold mt-3 mb-2">AppGallery</h3>
+                      <p class="text-slate-600 small mb-0">
+                        Descarga bancos, delivery y transporte locales con revisión de seguridad
+                        previa.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <aside class="col-lg-4" id="soporte">
+                <div class="sticky-lg-top" style="top: 6rem">
+                  <div class="bg-white rounded-xl shadow-lg border border-slate-200 p-4 mb-4">
+                    <h2 class="h6 fw-bold text-slate-900 mb-3">Categorías</h2>
+                    <div class="list-group list-group-flush">
+                      <a
+                        href="#productos"
+                        class="list-group-item list-group-item-action d-flex justify-content-between align-items-center px-0 border-0 py-2"
+                      >
+                        Smartphones
+                        <span class="badge rounded-pill bg-slate-200 text-slate-700">18</span>
+                      </a>
+                      <a
+                        href="#productos"
+                        class="list-group-item list-group-item-action d-flex justify-content-between align-items-center px-0 border-0 py-2"
+                      >
+                        Tablets
+                        <span class="badge rounded-pill bg-slate-200 text-slate-700">9</span>
+                      </a>
+                      <a
+                        href="#productos"
+                        class="list-group-item list-group-item-action d-flex justify-content-between align-items-center px-0 border-0 py-2"
+                      >
+                        Laptops
+                        <span class="badge rounded-pill bg-slate-200 text-slate-700">7</span>
+                      </a>
+                      <a
+                        href="#productos"
+                        class="list-group-item list-group-item-action d-flex justify-content-between align-items-center px-0 border-0 py-2"
+                      >
+                        Wearables
+                        <span class="badge rounded-pill bg-slate-200 text-slate-700">12</span>
+                      </a>
+                      <a
+                        href="#productos"
+                        class="list-group-item list-group-item-action d-flex justify-content-between align-items-center px-0 border-0 py-2"
+                      >
+                        Audio
+                        <span class="badge rounded-pill bg-slate-200 text-slate-700">11</span>
+                      </a>
+                      <a
+                        href="#productos"
+                        class="list-group-item list-group-item-action d-flex justify-content-between align-items-center px-0 border-0 py-2"
+                      >
+                        Accesorios
+                        <span class="badge rounded-pill bg-slate-200 text-slate-700">24</span>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div
+                    class="rounded-xl overflow-hidden shadow-lg bg-gradient-to-r from-red-700 to-slate-900 text-white p-4 mb-4"
+                  >
+                    <img src="ABCD" alt="ABCD" class="img-fluid rounded-lg mb-3" />
+                    <h2 class="h6 fw-bold mb-2">Plan Renueva tu Huawei</h2>
+                    <p class="small text-slate-200 mb-3">
+                      Entrega tu equipo anterior y recibe hasta S/ 1 200 de descuento en tu próxima
+                      compra.
+                    </p>
+                    <a href="#contacto" class="btn btn-light btn-sm rounded-lg fw-semibold px-3"
+                      >Calcular mi descuento</a
+                    >
+                  </div>
+
+                  <div class="bg-white rounded-xl shadow-lg border border-slate-200 p-4">
+                    <h2 class="h6 fw-bold text-slate-900 mb-3">Atención al cliente</h2>
+                    <ul class="list-unstyled small text-slate-600 mb-0 d-grid gap-2">
+                      <li class="d-flex gap-2">
+                        <i class="bi bi-telephone text-red-600"></i> 0800 00 000
+                      </li>
+                      <li class="d-flex gap-2">
+                        <i class="bi bi-whatsapp text-red-600"></i> +51 999 000 000
+                      </li>
+                      <li class="d-flex gap-2">
+                        <i class="bi bi-geo-alt text-red-600"></i> Av. Real 1234, Huancayo
+                      </li>
+                      <li class="d-flex gap-2">
+                        <i class="bi bi-clock text-red-600"></i> Lunes a sábado, 9:00 a 20:00
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div id="paso5-formulario" class="collapse paso-item">
+        <section id="contacto" class="py-5">
+          <div class="container py-lg-4">
+            <div class="row g-5 align-items-start">
+              <div class="col-lg-5">
+                <h2 class="display-6 fw-bold text-balance mb-3">Solicita una cotización</h2>
+                <p class="lead text-slate-600 mb-4">
+                  Un asesor revisa tu solicitud y responde en un plazo máximo de 24 horas.
+                </p>
+                <div class="rounded-xl overflow-hidden shadow-lg">
+                  <img src="ABCD" alt="ABCD" class="img-fluid w-100" />
+                </div>
+              </div>
+
+              <div class="col-lg-7">
+                <div class="bg-white border border-slate-200 rounded-xl shadow-lg p-4 p-lg-5">
+                  <form novalidate>
+                    <div class="row g-4">
+                      <div class="col-md-6">
+                        <label for="nombres" class="form-label fw-semibold"
+                          >Nombres y apellidos</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control rounded-lg py-2"
+                          id="nombres"
+                          name="nombres"
+                          placeholder="Ana Quispe Rojas"
+                          aria-describedby="ayudaNombres"
+                          required
+                        />
+                        <div id="ayudaNombres" class="form-text">
+                          Escríbelos como figuran en tu documento de identidad.
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="correo" class="form-label fw-semibold"
+                          >Correo electrónico</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control rounded-lg py-2 is-invalid"
+                          id="correo"
+                          name="correo"
+                          value=""
+                          aria-describedby="errorCorreo"
+                          required
+                        />
+                        <div id="errorCorreo" class="invalid-feedback">
+                          El correo está incompleto. Incluye el dominio, por ejemplo ana@correo.com
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="telefono" class="form-label fw-semibold">Teléfono</label>
+                        <div class="input-group">
+                          <span class="input-group-text rounded-start-lg bg-slate-100">+51</span>
+                          <input
+                            type="tel"
+                            class="form-control rounded-end-lg py-2"
+                            id="telefono"
+                            name="telefono"
+                            placeholder="999 000 000"
+                            aria-describedby="ayudaTelefono"
+                          />
+                        </div>
+                        <div id="ayudaTelefono" class="form-text">
+                          Lo usamos solo para coordinar la entrega.
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="producto" class="form-label fw-semibold"
+                          >Producto de interés</label
+                        >
+                        <select
+                          class="form-select rounded-lg py-2"
+                          id="producto"
+                          name="producto"
+                          aria-describedby="ayudaProducto"
+                          required
+                        >
+                          <option value="" selected>Elige una opción</option>
+                          <option value="mate70">HUAWEI Mate 70 Pro</option>
+                          <option value="matepad">HUAWEI MatePad Pro 13.2</option>
+                          <option value="matebook">HUAWEI MateBook X Pro</option>
+                          <option value="watch">HUAWEI WATCH GT 5 Pro</option>
+                          <option value="freebuds">HUAWEI FreeBuds Pro 4</option>
+                        </select>
+                        <div id="ayudaProducto" class="form-text">
+                          Puedes cotizar más de un equipo en el mensaje.
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="cantidad" class="form-label fw-semibold"
+                          >Cantidad de equipos</label
+                        >
+                        <input
+                          type="number"
+                          class="form-control rounded-lg py-2 peer"
+                          id="cantidad"
+                          name="cantidad"
+                          min="1"
+                          max="500"
+                          value="1"
+                          aria-describedby="ayudaCantidad"
+                        />
+                        <div id="ayudaCantidad" class="form-text peer-invalid:text-red-600">
+                          Desde 10 unidades aplica precio corporativo.
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="ciudad" class="form-label fw-semibold">Ciudad de entrega</label>
+                        <input
+                          type="text"
+                          class="form-control rounded-lg py-2"
+                          id="ciudad"
+                          name="ciudad"
+                          placeholder="Huancayo"
+                          aria-describedby="ayudaCiudad"
+                        />
+                        <div id="ayudaCiudad" class="form-text">
+                          Cubrimos las 25 regiones del país.
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <label for="mensaje" class="form-label fw-semibold"
+                          >Detalle de tu solicitud</label
+                        >
+                        <textarea
+                          class="form-control rounded-lg py-2"
+                          id="mensaje"
+                          name="mensaje"
+                          rows="4"
+                          placeholder="Cuéntanos qué necesitas: modelos, colores, accesorios o fecha de entrega"
+                          aria-describedby="ayudaMensaje"
+                        ></textarea>
+                        <div id="ayudaMensaje" class="form-text">Máximo 500 caracteres.</div>
+                      </div>
+
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="terminos"
+                            name="terminos"
+                            aria-describedby="ayudaTerminos"
+                            required
+                          />
+                          <label class="form-check-label" for="terminos"
+                            >Autorizo el tratamiento de mis datos personales</label
+                          >
+                        </div>
+                      </div>
+
+                      <div class="col-12 d-flex flex-column flex-sm-row gap-3">
+                        <button
+                          type="submit"
+                          class="btn btn-lg text-white bg-red-600 hover:bg-red-700 rounded-lg px-4 fw-semibold"
+                        >
+                          Enviar solicitud
+                        </button>
+                        <button
+                          type="reset"
+                          class="btn btn-lg btn-outline-secondary rounded-lg px-4"
+                        >
+                          Limpiar campos
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer id="paso1-footer" class="collapse paso-item bg-slate-950 text-slate-300 pt-5 pb-4">
+      <div class="container">
+        <div class="row g-4 pb-4 border-bottom border-white/10">
+          <div class="col-lg-4">
+            <a
+              href="#inicio"
+              class="d-flex align-items-center gap-2 text-white text-decoration-none mb-3"
+            >
+              <img src="ABCD" alt="ABCD" width="36" height="36" class="rounded-md" />
+              <span class="fw-bold tracking-tight">HUAWEI</span>
+            </a>
+            <p class="small text-slate-400 max-w-3xl">
+              Distribuidor autorizado. Todos los equipos cuentan con garantía de fábrica y soporte
+              en centros de servicio.
+            </p>
+            <div class="d-flex gap-3 fs-5 mt-3">
+              <a href="#redes" class="text-slate-400 hover:text-white" aria-label="Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#redes" class="text-slate-400 hover:text-white" aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#redes" class="text-slate-400 hover:text-white" aria-label="YouTube"
+                ><i class="bi bi-youtube"></i
+              ></a>
+              <a href="#redes" class="text-slate-400 hover:text-white" aria-label="LinkedIn"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-2">
+            <h2 class="h6 fw-bold text-white mb-3">Productos</h2>
+            <ul class="list-unstyled d-grid gap-2 small">
+              <li>
+                <a href="#productos" class="text-slate-400 text-decoration-none hover:text-white"
+                  >Smartphones</a
+                >
+              </li>
+              <li>
+                <a href="#productos" class="text-slate-400 text-decoration-none hover:text-white"
+                  >Tablets</a
+                >
+              </li>
+              <li>
+                <a href="#productos" class="text-slate-400 text-decoration-none hover:text-white"
+                  >Laptops</a
+                >
+              </li>
+              <li>
+                <a href="#productos" class="text-slate-400 text-decoration-none hover:text-white"
+                  >Wearables</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-lg-2">
+            <h2 class="h6 fw-bold text-white mb-3">Soporte</h2>
+            <ul class="list-unstyled d-grid gap-2 small">
+              <li>
+                <a href="#soporte" class="text-slate-400 text-decoration-none hover:text-white"
+                  >Centros de servicio</a
+                >
+              </li>
+              <li>
+                <a href="#soporte" class="text-slate-400 text-decoration-none hover:text-white"
+                  >Garantía</a
+                >
+              </li>
+              <li>
+                <a href="#soporte" class="text-slate-400 text-decoration-none hover:text-white"
+                  >Actualizaciones</a
+                >
+              </li>
+              <li>
+                <a href="#soporte" class="text-slate-400 text-decoration-none hover:text-white"
+                  >Manuales</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-lg-2">
+            <h2 class="h6 fw-bold text-white mb-3">Empresa</h2>
+            <ul class="list-unstyled d-grid gap-2 small">
+              <li>
+                <a href="#inicio" class="text-slate-400 text-decoration-none hover:text-white"
+                  >Nosotros</a
+                >
+              </li>
+              <li>
+                <a href="#inicio" class="text-slate-400 text-decoration-none hover:text-white"
+                  >Trabaja con nosotros</a
+                >
+              </li>
+              <li>
+                <a href="#inicio" class="text-slate-400 text-decoration-none hover:text-white"
+                  >Sala de prensa</a
+                >
+              </li>
+              <li>
+                <a href="#contacto" class="text-slate-400 text-decoration-none hover:text-white"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-lg-2">
+            <h2 class="h6 fw-bold text-white mb-3">Legal</h2>
+            <ul class="list-unstyled d-grid gap-2 small">
+              <li>
+                <a href="#legal" class="text-slate-400 text-decoration-none hover:text-white"
+                  >Términos de uso</a
+                >
+              </li>
+              <li>
+                <a href="#legal" class="text-slate-400 text-decoration-none hover:text-white"
+                  >Privacidad</a
+                >
+              </li>
+              <li>
+                <a href="#legal" class="text-slate-400 text-decoration-none hover:text-white"
+                  >Cookies</a
+                >
+              </li>
+              <li>
+                <a href="#legal" class="text-slate-400 text-decoration-none hover:text-white"
+                  >Libro de reclamaciones</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
 
-        <div class="col-6 col-lg-2">
-          <h2 class="h6 fw-bold text-white mb-3">Productos</h2>
-          <ul class="list-unstyled d-grid gap-2 small">
-            <li>
-              <a href="#productos" class="text-slate-400 text-decoration-none hover:text-white"
-                >Smartphones</a
-              >
-            </li>
-            <li>
-              <a href="#productos" class="text-slate-400 text-decoration-none hover:text-white"
-                >Tablets</a
-              >
-            </li>
-            <li>
-              <a href="#productos" class="text-slate-400 text-decoration-none hover:text-white"
-                >Laptops</a
-              >
-            </li>
-            <li>
-              <a href="#productos" class="text-slate-400 text-decoration-none hover:text-white"
-                >Wearables</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div class="col-6 col-lg-2">
-          <h2 class="h6 fw-bold text-white mb-3">Soporte</h2>
-          <ul class="list-unstyled d-grid gap-2 small">
-            <li>
-              <a href="#soporte" class="text-slate-400 text-decoration-none hover:text-white"
-                >Centros de servicio</a
-              >
-            </li>
-            <li>
-              <a href="#soporte" class="text-slate-400 text-decoration-none hover:text-white"
-                >Garantía</a
-              >
-            </li>
-            <li>
-              <a href="#soporte" class="text-slate-400 text-decoration-none hover:text-white"
-                >Actualizaciones</a
-              >
-            </li>
-            <li>
-              <a href="#soporte" class="text-slate-400 text-decoration-none hover:text-white"
-                >Manuales</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div class="col-6 col-lg-2">
-          <h2 class="h6 fw-bold text-white mb-3">Empresa</h2>
-          <ul class="list-unstyled d-grid gap-2 small">
-            <li>
-              <a href="#inicio" class="text-slate-400 text-decoration-none hover:text-white"
-                >Nosotros</a
-              >
-            </li>
-            <li>
-              <a href="#inicio" class="text-slate-400 text-decoration-none hover:text-white"
-                >Trabaja con nosotros</a
-              >
-            </li>
-            <li>
-              <a href="#inicio" class="text-slate-400 text-decoration-none hover:text-white"
-                >Sala de prensa</a
-              >
-            </li>
-            <li>
-              <a href="#contacto" class="text-slate-400 text-decoration-none hover:text-white"
-                >Contacto</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div class="col-6 col-lg-2">
-          <h2 class="h6 fw-bold text-white mb-3">Legal</h2>
-          <ul class="list-unstyled d-grid gap-2 small">
-            <li>
-              <a href="#legal" class="text-slate-400 text-decoration-none hover:text-white"
-                >Términos de uso</a
-              >
-            </li>
-            <li>
-              <a href="#legal" class="text-slate-400 text-decoration-none hover:text-white"
-                >Privacidad</a
-              >
-            </li>
-            <li>
-              <a href="#legal" class="text-slate-400 text-decoration-none hover:text-white"
-                >Cookies</a
-              >
-            </li>
-            <li>
-              <a href="#legal" class="text-slate-400 text-decoration-none hover:text-white"
-                >Libro de reclamaciones</a
-              >
-            </li>
-          </ul>
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 pt-4 small text-slate-500"
+        >
+          <p class="mb-0">
+            Universidad Nacional del Centro del Perú - Facultad de Ingeniería de Sistemas Asignatura
+            <br />
+            Desarrollo de Aplicaciones Web - Semana 03 <br />Gago Uribe Edgar Robert
+          </p>
         </div>
       </div>
+    </footer>
 
+    <div class="position-fixed end-0 top-50 translate-middle-y z-3 p-3">
       <div
-        class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 pt-4 small text-slate-500"
+        class="bg-white rounded-xl shadow-2xl border border-slate-200 p-3 d-flex flex-column gap-2"
+        style="width: 200px"
       >
-        <p class="mb-0">
-          Universidad Nacional del Centro del Perú - Facultad de Ingeniería de Sistemas Asignatura
-          <br />
-          Desarrollo de Aplicaciones Web - Semana 03 <br />Gago Uribe Edgar Robert
-        </p>
+        <h6 class="fw-bold text-slate-900 mb-1 text-center">Control de Pasos</h6>
+        <button
+          type="button"
+          class="btn btn-sm btn-outline-dark text-start"
+          data-bs-toggle="collapse"
+          data-bs-target="#paso1-footer"
+        >
+          Paso 1: Footer
+        </button>
+        <button
+          type="button"
+          class="btn btn-sm btn-outline-dark text-start"
+          data-bs-toggle="collapse"
+          data-bs-target="#paso2-nav"
+        >
+          Paso 2: Nav
+        </button>
+        <button
+          type="button"
+          class="btn btn-sm btn-outline-dark text-start"
+          data-bs-toggle="collapse"
+          data-bs-target="#paso3-hero"
+        >
+          Paso 3: Hero
+        </button>
+        <button
+          type="button"
+          class="btn btn-sm btn-outline-dark text-start"
+          data-bs-toggle="collapse"
+          data-bs-target="#paso4-tarjetas"
+        >
+          Paso 4: Tarjetas
+        </button>
+        <button
+          type="button"
+          class="btn btn-sm btn-outline-dark text-start"
+          data-bs-toggle="collapse"
+          data-bs-target="#paso5-formulario"
+        >
+          Paso 5: Formulario
+        </button>
+        <hr class="my-1 border-slate-300" />
+        <button
+          type="button"
+          class="btn btn-sm btn-success"
+          data-bs-toggle="collapse"
+          data-bs-target=".paso-item:not(.show)"
+        >
+          Activar todos
+        </button>
+        <button
+          type="button"
+          class="btn btn-sm btn-danger"
+          data-bs-toggle="collapse"
+          data-bs-target=".paso-item.show"
+        >
+          Desactivar todos
+        </button>
       </div>
     </div>
-  </footer>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
-  ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
